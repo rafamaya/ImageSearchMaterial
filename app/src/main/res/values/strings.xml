@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ImageSearch</string>
+    <string name="welcome">Welcome to Image Search!</string>
+    <string name="action_clear_history">Clear History</string>
+    <string name="image_search_hint">Search Google Images</string>
+    <string name="enter_valid_word">Please enter a valid word and try again</string>
+    <string name="no_internet">No Internet connection. Please try again later</string>
+    <string name="load_local">Load Local Pictures</string>
+    <string name="action_see_on_wear">See on Android Wear</string>
+
+</resources>

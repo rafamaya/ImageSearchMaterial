@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/layout"
+        >
+
+        <android.support.wearable.view.CircledImageView
+            android:id="@+id/searchAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_menu_search_mtrl_alpha"
+            app:circle_color="@android:color/holo_blue_dark"
+            app:circle_radius="48dp"
+            app:circle_border_width="0dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|bottom"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            android:text="Search image"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".PhotoActivity" tools:deviceIds="wear_square">
+
+    <android.support.wearable.view.GridViewPager
+        android:id="@+id/gridPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        tools:context=".PhotoActivity"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/delayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.wearable.view.DelayedConfirmationView
+            android:id="@+id/delay"
+            app:circle_border_color="#2299ee"
+            app:circle_border_width="5sp"
+            app:circle_color="@android:color/holo_green_light"
+            app:circle_padding="5sp"
+            app:circle_radius="75sp"
+            app:update_interval="100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/searchText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:text="word"
+            />
+
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <ImageView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/indicator_0"
+            android:src="@drawable/full_10"
+            android:layout_marginRight="5dp"/>
+        <ImageView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/indicator_1"
+            android:src="@drawable/empty_10"/>
+    </LinearLayout>
+
+</RelativeLayout>

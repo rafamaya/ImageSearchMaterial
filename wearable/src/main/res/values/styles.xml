@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NavButtonStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="NavButtonNextStyle" parent="NavButtonStyle">
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:text">+</item>
+    </style>
+
+    <style name="NavButtonPrevStyle" parent="NavButtonStyle">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:text">-</item>
+    </style>
+
+</resources>
